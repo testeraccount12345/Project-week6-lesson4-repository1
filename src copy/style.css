@@ -1,0 +1,51 @@
+h1 {
+  text-align: center;
+}
+
+h3 {
+  font-size: medium;
+  padding: 0 5px auto;
+}
+
+h4 {
+  margin-top: 70px;
+}
+
+.sun-icon,
+.cloud-icon,
+.snow-icon {
+  font-size: 100px;
+  margin-top: 50px;
+}
+.rain-icon {
+  color: rgb(37, 63, 179);
+  text-align: center;
+  font-size: 300px;
+  margin-bottom: 50px;
+}
+
+.sun-icon {
+  color: orange;
+}
+
+.cloud-icon {
+  color: skyblue;
+}
+
+.snow-icon {
+  color: aqua;
+}
+
+.row {
+  text-align: center;
+}
+
+#temperature {
+  color: black;
+  font-size: 40px;
+}
+
+#units {
+  position: relative;
+  top: -20px;
+}
