@@ -16,41 +16,6 @@ ul {
   padding: 0 auto;
   margin: 0 auto;
 }
-
-.sun-icon,
-.cloud-icon,
-.snow-icon {
-  font-size: 100px;
-  margin-top: 50px;
-}
-.rain-icon {
-  color: rgb(37, 63, 179);
-  font-size: 100px;
-  margin-bottom: 50px;
-  text-align: center;
-}
-
-.sun-icon {
-  color: orange;
-}
-
-.cloud-icon {
-  color: skyblue;
-}
-
-.snow-icon {
-  color: aqua;
-}
-
-#temperature {
-  color: black;
-  font-size: 35px;
-}
-
-#units {
-  font-size: 15px;
-}
-
 .weather-app-wrapper {
   max-width: 600px;
   margin: 20px auto;
@@ -60,4 +25,42 @@ ul {
   border: 1px solid black;
   border-radius: 10px;
   padding: 20px;
+}
+
+.active {
+  color: black;
+  cursor: default;
+}
+
+.active:hover {
+  cursor: default;
+  color: black;
+}
+
+#temperature {
+  font-size: 35px;
+}
+
+#units {
+  font-size: 15px;
+}
+
+#celsius-link {
+  text-decoration: none;
+  position: relative;
+  top: -12px;
+}
+
+#fahrenheit-link {
+  text-decoration: none;
+  position: relative;
+  top: -12px;
+  right: -2px;
+}
+
+#line {
+  position: relative;
+  top: -14px;
+  right: -4px;
+  font-size: 12px;
 }

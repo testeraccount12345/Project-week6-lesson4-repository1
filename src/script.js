@@ -44,36 +44,45 @@ let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", handleSubmit);
 
 // Celsius to Fahrenheit coverter
+function convertToFahrenheit(event) {
+  event.preventDefault();
 
-//function convertToFahrenheit(event) {
-//  event.preventDefault();
-//let temperatureElement = document.querySelector("#temperature");
-//let temperature = temperatureElement.innerHTML;
-//temperatureElement.innerHTML = Math.round(temperature * 9) / 5 + 32
-//}
+  let temperatureElement = document.querySelector("#temperature");
+  // add the active class to celsius link
+  celsiusLink.classList.remove("active");
+  fahrenheitLink.classList.add("active");
+  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
+  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
+}
 
-//let fahrenheitLink = document.querySelector("#fahrenheit-link");
-//fahrenheitLink.addEventListener("click", convertToFahrenheit);
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", convertToFahrenheit);
 
 // Fahrenheit to Celsius converter
-//function convertToCelsius(event) {
-//  let temperatureElement = document.querySelector("#temperature");
-//temperature = temperatureElement.innerHTML;
-//temperatureElement.innerHTML = Math.round(temperature - 32) * (5/9)
-//}
+function convertToCelsius(event) {
+  event.preventDefault();
+  celsiusLink.classList.add("active");
+  fahrenheitLink.classList.remove("active");
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
+}
 
-//let celsiusLink = document.querySelector("#celsius-link");
-//celsiusLink.addEventListener("click", convertToCelsius);
+let celsiusTemperature = null;
+
+let celsiusLink = document.querySelector("#celsius-link");
+celsiusLink.addEventListener("click", convertToCelsius);
 
 // city weather search engine
 
 // Update information on webpage by ID
 function showTemperature(response) {
+  let temperatureElement = document.querySelector("#temperature");
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#country").innerHTML = response.data.sys.country;
-  document.querySelector("#temperature").innerHTML = Math.round(
-    response.data.main.temp
-  );
+  celsiusTemperature = response.data.main.temp;
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
+  // document.querySelector("#temperature").innerHTML =
+  //   Math.round("celsiusTemperature");
   document.querySelector("#weather").innerHTML = response.data.weather[0].main;
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#wind").innerHTML = Math.round(
