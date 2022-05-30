@@ -109,7 +109,7 @@ function displayForecast() {
     forecastHTML =
       forecastHTML +
       `
-  <div class="col-2">
+  <div class="col-2" id="forecast-border">
   <div>
   <span id="forecast-days">
     ${day}</span></div>
