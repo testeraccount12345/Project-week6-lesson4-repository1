@@ -64,3 +64,18 @@ ul {
   right: -4px;
   font-size: 12px;
 }
+
+#forecast-days {
+  position: relative;
+  left: 20px;
+}
+
+#forecast-icon {
+  position: relative;
+  left: -15px;
+}
+
+#forecast-highlow {
+  position: relative;
+  right: -10px;
+}
