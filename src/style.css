@@ -1,28 +1,39 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(
+    rgb(192, 175, 26),
+    rgb(143, 224, 255),
+    rgb(117, 180, 227),
+    rgb(17, 91, 175),
+    rgb(10, 77, 155)
+  );
 }
 
 h1 {
   text-align: center;
   padding-top: 10px;
   padding-bottom: 30px;
+  color: white;
 }
 
 li {
   list-style: none;
+  color: white;
 }
 
 ul {
   padding: 0 auto;
   margin: 0 auto;
+  color: white;
 }
 .weather-app-wrapper {
-  max-width: 600px;
+  max-width: 700px;
   margin: 20px auto;
+  color: white;
 }
 
 .weather-app {
-  border: 1px solid black;
+  border: 1px solid white;
   border-radius: 10px;
   padding: 20px;
   padding-bottom: 0;
@@ -52,6 +63,7 @@ ul {
   text-decoration: none;
   position: relative;
   top: -12px;
+  color: white;
 }
 
 #fahrenheit-link {
@@ -78,12 +90,18 @@ ul {
   left: -20px;
 }
 
-#forecast-highlow {
-  position: relative;
-}
-
 #forecast-border {
-  border: 1px solid black;
+  border: 1px solid white;
   border-radius: 10px;
   padding: 20px;
+  box-sizing: 100px;
+}
+
+#forecast-highlow {
+  text-align: center;
+  font-size: small;
+}
+
+#forecast-low {
+  text-align: center;
 }
