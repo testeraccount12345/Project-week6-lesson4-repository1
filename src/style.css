@@ -1,10 +1,11 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   background: linear-gradient(
-    rgb(192, 175, 26),
+    rgb(255, 247, 172),
     rgb(143, 224, 255),
     rgb(117, 180, 227),
     rgb(17, 91, 175),
+    rgb(10, 77, 155),
     rgb(10, 77, 155)
   );
 }
@@ -26,8 +27,18 @@ ul {
   margin: 0 auto;
   color: white;
 }
+
+#icon {
+  display: block;
+  line-height: -100px;
+  width: 300px;
+  position: relative;
+  right: 100px;
+  bottom: 50px;
+}
+
 .weather-app-wrapper {
-  max-width: 700px;
+  max-width: 650px;
   margin: 20px auto;
   color: white;
 }
@@ -36,19 +47,9 @@ ul {
   border: 1px solid white;
   border-radius: 10px;
   padding: 20px;
-  padding-bottom: 0;
+  padding-bottom: 0px;
   padding-left: 11px;
   padding-right: 11px;
-}
-
-.active {
-  color: black;
-  cursor: default;
-}
-
-.active:hover {
-  cursor: default;
-  color: black;
 }
 
 #temperature {
@@ -57,20 +58,9 @@ ul {
 
 #units {
   font-size: 15px;
-}
-
-#celsius-link {
-  text-decoration: none;
   position: relative;
-  top: -12px;
-  color: white;
-}
-
-#fahrenheit-link {
-  text-decoration: none;
-  position: relative;
-  top: -12px;
-  right: -2px;
+  bottom: 14px;
+  left: -1px;
 }
 
 #line {
@@ -80,14 +70,9 @@ ul {
   font-size: 12px;
 }
 
-#forecast-days {
-  position: relative;
-  left: 15px;
-}
-
 #forecast-icon {
   position: relative;
-  left: -20px;
+  left: -16px;
 }
 
 #forecast-border {
@@ -99,9 +84,16 @@ ul {
 
 #forecast-highlow {
   text-align: center;
-  font-size: small;
 }
 
-#forecast-low {
+#forecast {
   text-align: center;
+  max-height: 500px;
+  position: relative;
+  top: 0px;
+}
+
+#forecast-description {
+  position: relative;
+  bottom: 15px;
 }
