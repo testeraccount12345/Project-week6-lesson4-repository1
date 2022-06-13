@@ -28,17 +28,8 @@ ul {
   color: white;
 }
 
-#icon {
-  display: block;
-  line-height: -100px;
-  width: 200px;
-  position: relative;
-  right: 50px;
-  bottom: 30px;
-}
-
 .weather-app-wrapper {
-  max-width: 650px;
+  max-width: 625px;
   margin: 20px auto;
   color: white;
 }
@@ -50,6 +41,26 @@ ul {
   padding-bottom: 0px;
   padding-left: 11px;
   padding-right: 11px;
+}
+
+#author {
+  color: white;
+
+  position: relative;
+  bottom: 40px;
+}
+
+#hyperlink {
+  color: rgba(245, 245, 245, 0.63);
+}
+
+#icon {
+  display: block;
+  line-height: -100px;
+  width: 200px;
+  position: relative;
+  right: 50px;
+  bottom: 30px;
 }
 
 #temperature {
