@@ -31,10 +31,10 @@ ul {
 #icon {
   display: block;
   line-height: -100px;
-  width: 300px;
+  width: 200px;
   position: relative;
-  right: 100px;
-  bottom: 50px;
+  right: 50px;
+  bottom: 30px;
 }
 
 .weather-app-wrapper {
